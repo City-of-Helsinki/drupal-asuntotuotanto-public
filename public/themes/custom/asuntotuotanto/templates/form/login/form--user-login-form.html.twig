@@ -21,4 +21,8 @@
   <form{{ attributes|without('class') }} {{ create_attribute({'class': classes}) }}>
     {{ children }}
   </form>
+  <div class="user-form__actions">
+    <a href="{{ path('user.register') }}">{% trans %}Register{% endtrans %}</a>
+    <a href="{{ path('user.pass') }}">{% trans %}Forgot password{% endtrans %}</a>
+  </div>
 </div>
